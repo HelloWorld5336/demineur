@@ -12,4 +12,5 @@ void cases(int n, int i, int j, int adja, RenderWindow & window);
 void affichecases(mat & m);
 int coord(int & x, int & y, int n);
 int gererEvenements(mat & m, RenderWindow & window);
+int vict(RenderWindow & window);
 int fenetre(mat & m, RenderWindow & window);

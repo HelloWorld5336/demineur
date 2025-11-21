@@ -13,8 +13,17 @@ int partie(RenderWindow & window){
     int n = m.size();
     int partie_en_cours = 1;
     for(;partie_en_cours;){
-        partie_en_cours = fenetre(m, window);
+        if (victoire(m)) {
+            return vict(window);
+        }
+        else partie_en_cours = fenetre(m, window);
     }
+    return 0;
+}
+
+// pour que si on decouvre toutes les cases a decouvrir, la partie s'arrete
+// pb !!!
+bool victoire(mat & m) {
     return 0;
 }
 

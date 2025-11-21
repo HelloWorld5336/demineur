@@ -118,7 +118,7 @@ mat revel_bombes(mat & m){
 
 int cliquer_case(int i, int j, bool drap, mat & m){
     if (!(activation&m[j][i])){
-        if(drap) m[j][i]=m[j][i]^drapeau;
+        if(drap) {m[j][i]=m[j][i]^drapeau;}
 
         else if(!(m[j][i]&drapeau)){
             m[j][i]=m[j][i]|activation; revel_cases(j, i, m);

@@ -7,10 +7,7 @@ int main(){
     int jouer = 1;
     for(;jouer;){
         RenderWindow window(VideoMode(16*taille_case, 3*taille_case+16*taille_case), "Demineur");
-
-        partie(window);
-        cout << '\n' << "voulez-vous rejouer" << '\n';
-        cin >> jouer;
+        jouer = partie(window);
     }
     return 0;
 }
